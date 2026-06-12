@@ -33,7 +33,11 @@ body {
 }
 
 /* Style the story opening container */
-.story-opening {
+.story-opening,
+.story-opening-1,
+.story-opening-2,
+.story-opening-3,
+.story-opening-4 {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
@@ -54,6 +58,15 @@ body {
     margin-bottom: 20px;
 }
 
+.story-opening-2 h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.story-opening-3 h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 /* Style the buttons container */
 .buttons {
     margin: 20px;
@@ -90,11 +103,15 @@ button:hover {
 }
 
 /* Style the images in the screens */
+.story-opening-1 img,
+.story-opening-2 img,
+.story-opening-3 img,
+.story-opening-4 img,
 .option-one-screen img,
 .option-two-screen img,
 .option-one-end img,
 .option-two-end img {
-    max-width: 100%;
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -106,4 +123,10 @@ button:hover {
 .option-two-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
