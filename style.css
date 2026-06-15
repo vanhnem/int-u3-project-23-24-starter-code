@@ -1,6 +1,6 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
- /*
+ 
 .story-opening-2,
 .story-opening-3,
 .story-opening-4,
@@ -10,7 +10,7 @@
 .option-two-end  {
    display:none;
 }
-*/
+
 
 
 /* Feel free to change any of the styling below!*/
@@ -30,6 +30,7 @@ body {
 
 /* Style the title of your story */
 .title {
+    font-family: "Inconsolata", monospace;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -50,27 +51,28 @@ body {
 
 /* Style the story image */
 .story-opening img {
-    max-width: 100%;
+    max-width: 2000px;
     height: auto;
     margin-bottom: 10px;
 }
 
 /* Style the story opening message */
 .story-opening h1,
+.story-opening-2 h1,
+.story-opening-3 h1,
 .story-opening-4 h1 {
     font-size: 20px;
     margin-bottom: 20px;
+    font-family: "Inconsolata", monospace;
+}
+.option-one,
+.option-two {
+    font-size: 10px;
+    margin-bottom: 20px;
+     font-family: "Inconsolata", monospace;
 }
 
-.story-opening-2 h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
 
-.story-opening-3 h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
 /* Style the buttons container */
 .buttons {
     margin: 20px;
@@ -78,14 +80,19 @@ body {
 
 /* Style the option buttons */
 button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/012/981/767/small/old-parchment-paper-scroll-sheet-vintage-aged-or-texture-background-png.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    color: 'black';
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    font-weight:bolder;
+    font-family: "Inconsolata", monospace;
     transition: background-color 0.3s ease;
 }
 
@@ -128,6 +135,7 @@ button:hover {
 .option-two-screen h1,
 .option-one-end h1,
 .option-two-end h1 {
+     font-family: "Inconsolata", monospace;
     font-size: 20px;
     margin-bottom: 20px;
 }
